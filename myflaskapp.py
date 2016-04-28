@@ -12,29 +12,32 @@ import init
 # 導入 ag100 所屬的模組
 import users.s2a.g100.scrum1_task1
 import users.s2a.g100.scrum2_task1
+#g1
+
+
+import users.s2a.g1.ag1_40223153_task1
+
+#g3
+#g6
+
+
+
+#g9
+
 # 二乙
 #g1
-import s2b_files.task1.g1.task0 as bg1_0
-import users.s2b.g1.scrum40123156_task1
-import users.s2b.g1.scrum40123126_task1
-import users.s2b.g1.scrum40123129_task1
-import users.s2b.g1.scrum40123131_task1
-import users.s2b.g1.scrum40123133_task1
-import users.s2b.g1.scrum40123144_task1
-import users.s2b.g1.scrum40123134_task1
-#g2
-import users.s2b.g2.task0
-import users.s2b.g2.scrum1_task40123235
-import users.s2b.g2.scrum2_task40123202
-import users.s2b.g2.scrum2_task40123214
-import users.s2b.g2.scrum2_task40123217
-import users.s2b.g2.scrum2_task40123226
-import users.s2b.g2.scrum2_task40123232
-import users.s2b.g2.scrum2_task40123235
-import users.s2b.g2.scrum2_task40123244
-#g9
-import users.s2b.g9.task0
-import users.s2b.g9.scrum1_task40323250
+
+#g4
+#import users.s2b.g4.taskbg4
+#import users.s2b.g5.scrum1_task40323201
+#import users.s2b.g5.scrum2_task40323202
+#import users.s2b.g5.scrum3_task40323203
+#import users.s2b.g5.scrum4_task40323205
+#import users.s2b.g5.scrum5_task40323208
+#import users.s2b.g5.scrum6_task40123128
+#以上幾行有錯誤
+#g5
+
 # 確定程式檔案所在目錄, 在 Windows 有最後的反斜線
 _curdir = os.path.join(os.getcwd(), os.path.dirname(__file__))
 # 設定在雲端與近端的資料儲存目錄
@@ -339,30 +342,14 @@ def download(filename):
 app.register_blueprint(users.s2a.g100.scrum1_task1.scrum1_task1)
 # 註冊 ag100 的 scrum2_task1.py 檔案中的 scrum2_task1 藍圖
 app.register_blueprint(users.s2a.g100.scrum2_task1.scrum2_task1)
-# 二乙
 #g1
-app.register_blueprint(bg1_0.bg1)
-app.register_blueprint(users.s2b.g1.scrum40123156_task1.scrum40123156_task1)
-app.register_blueprint(users.s2b.g1.scrum40123126_task1.scrum40123126_task1)
-app.register_blueprint(users.s2b.g1.scrum40123129_task1.scrum40123129_task1)
-app.register_blueprint(users.s2b.g1.scrum40123131_task1.scrum40123131_task1)
-app.register_blueprint(users.s2b.g1.scrum40123133_task1.scrum40123133_task1)
-app.register_blueprint(users.s2b.g1.scrum40123144_task1.scrum40123144_task1)
-app.register_blueprint(users.s2b.g1.scrum40123134_task1.scrum40123134_task1)
-# 註冊各組的程式 (第3步/總共3步, 前面1步為 import ag1)
-app.register_blueprint(users.s2b.g2.task0.bg2)
-app.register_blueprint(users.s2b.g9.task0.bg9)
-#g2
-app.register_blueprint(users.s2b.g2.scrum1_task40123235.scrum1_task40123235)
-app.register_blueprint(users.s2b.g2.scrum2_task40123202.scrum2_task40123202)
-app.register_blueprint(users.s2b.g2.scrum2_task40123214.scrum2_task40123214)
-app.register_blueprint(users.s2b.g2.scrum2_task40123217.scrum2_task40123217)
-app.register_blueprint(users.s2b.g2.scrum2_task40123226.scrum2_task40123226)
-app.register_blueprint(users.s2b.g2.scrum2_task40123232.scrum2_task40123232)
-app.register_blueprint(users.s2b.g2.scrum2_task40123235.scrum2_task40123235)
-app.register_blueprint(users.s2b.g2.scrum2_task40123244.scrum2_task40123244)
-#g9
-app.register_blueprint(users.s2b.g9.scrum1_task40323250.scrum1_task40323250)
+
+app.register_blueprint(users.s2a.g1.ag1_40223153_task1.ag1_40223153)
+#g3
+
+#g6
+
+
 if __name__ == "__main__":
     app.run()
 
